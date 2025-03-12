@@ -1,0 +1,13 @@
+package app.domain.models;
+import java.util.List;
+
+public class MedicalRecord {
+	
+	private long medicalRecordId;
+	private Pet pet;
+	private List<MedicalRecordEntry> records; 
+	
+	
+	
+
+}

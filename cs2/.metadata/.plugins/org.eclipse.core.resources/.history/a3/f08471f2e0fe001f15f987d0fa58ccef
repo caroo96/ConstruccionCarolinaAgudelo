@@ -1,0 +1,27 @@
+package app.domain.models;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Setter	
+@Getter 
+@NoArgsConstructor
+
+public class Race {
+	
+	private long raceId;
+	private String name;
+	private String description;
+	private Species species;
+	
+	
+	public Race(long raceId, String name, String description, Species species) {
+		super();
+		this.raceId = raceId;
+		this.name = name;
+		this.description = description;
+		this.species = species;
+	}
+	
+}

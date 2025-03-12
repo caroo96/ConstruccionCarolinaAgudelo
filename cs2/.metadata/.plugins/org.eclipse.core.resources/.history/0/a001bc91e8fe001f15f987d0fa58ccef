@@ -1,0 +1,13 @@
+package app.domain.models;
+
+public class InvoiceDetail {
+	
+	private long invoiceDetailId;
+	private InvoiceHeader invoiceHeader;
+	//private Order order;
+	private String nameProduct;
+	private double amount;
+	private int quantity;
+	
+
+}

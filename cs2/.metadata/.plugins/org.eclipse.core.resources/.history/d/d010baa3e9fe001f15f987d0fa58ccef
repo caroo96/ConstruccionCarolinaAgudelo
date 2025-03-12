@@ -1,0 +1,8 @@
+package app.domain.models;
+
+public class MedicalRecordHeader {
+	
+	private long medicalRecordHeaderId;
+	
+
+}

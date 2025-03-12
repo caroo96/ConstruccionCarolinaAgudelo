@@ -1,0 +1,20 @@
+package app.domain.models;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Setter	
+@Getter 
+@NoArgsConstructor
+
+public class Owner extends User {
+	private long ownerId;
+
+	public Owner(long personId, long document, String name, int age, String role, long userId, String userName,
+			String password, long ownerId) {
+		super(personId, document, name, age, role, userId, userName, password);
+		this.ownerId = ownerId;
+	}
+	
+}

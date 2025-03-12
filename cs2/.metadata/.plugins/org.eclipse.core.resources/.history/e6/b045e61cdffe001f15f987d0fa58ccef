@@ -1,0 +1,10 @@
+package app.domain.models;
+
+public class Administrator extends User {
+	
+	private long administratorId;
+	
+	
+	
+
+}
