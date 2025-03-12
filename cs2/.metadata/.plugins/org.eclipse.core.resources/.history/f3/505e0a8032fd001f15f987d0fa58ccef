@@ -1,0 +1,8 @@
+package app.domain.models;
+
+public class Role {
+	
+	private long roleId;
+	private String name;
+	private String description;
+}

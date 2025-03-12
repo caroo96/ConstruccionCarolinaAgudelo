@@ -1,0 +1,14 @@
+package app.domain.models;
+
+import java.sql.Date;
+
+public class Order {
+	
+	private long orderId;
+	private Pet pet;
+	private Owner owner;
+	private Veterinarian veterinarian;
+	private String medicineName;
+	private Date dateCreated;
+
+}

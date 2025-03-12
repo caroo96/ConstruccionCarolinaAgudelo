@@ -1,0 +1,8 @@
+package app.domain.models;
+
+public class Medicalhistory {
+	
+	private long historyMedicalId;
+	
+
+}

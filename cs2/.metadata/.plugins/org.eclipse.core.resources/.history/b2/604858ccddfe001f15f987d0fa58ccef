@@ -1,0 +1,11 @@
+package app.domain.models;
+
+public class Veterinarian extends User {
+	
+	private long veterinarianId;
+
+}
+	
+	
+
+

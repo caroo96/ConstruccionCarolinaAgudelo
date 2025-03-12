@@ -1,0 +1,25 @@
+package app.domain.models;
+
+import lombok.Setter;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Setter
+@Getter
+@NoArgsConstructor
+
+public class Person {		
+	private long personId;
+	private long document;
+	private String name;
+	private int age;
+		
+	public Person(long personId, long document, String name, int age) {
+		super();
+		this.personId = personId;
+		this.document = document;
+		this.name = name;
+		this.age = age;		
+	}
+}
+
