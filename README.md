@@ -6,7 +6,7 @@
 🚀 **Tecnologías Utilizadas**   
 🔹 **Lenguaje:** Java `22.0.1` (2024-04-16)  
 🔹 **IDE:** Eclipse `Version 2024-12 (4.34.0)`  
-🔹 **Base de Datos:** Microsoft SQL Server `2019 - 15.0.4123.1 (X64)`
+🔹 **Base de Datos:** Microsoft SQL Server 2022 - 16.0.1135.2 (X64)`
 
 
 
