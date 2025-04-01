@@ -13,19 +13,17 @@ public class OrderHeader {
 	
 	private long orderId;
 	private Pet pet;
-	private Owner owner;
-	private Veterinarian veterinarian;	
+	private Person person;
 	private Date dateCreated;
 	private boolean status;
 	
 	
-	public OrderHeader(long orderId, Pet pet, Owner owner, Veterinarian veterinarian, Date dateCreated,
+	public OrderHeader(long orderId, Pet pet, Person person, Date dateCreated,
 			boolean status) {
 		super();
 		this.orderId = orderId;
 		this.pet = pet;
-		this.owner = owner;
-		this.veterinarian = veterinarian;
+		this.person = person;
 		this.dateCreated = dateCreated;
 		this.status = status;
 	}

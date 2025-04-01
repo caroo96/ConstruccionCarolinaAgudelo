@@ -12,7 +12,7 @@ public class Pet {
 	
 	private long petId;
 	private String name;
-	private Owner owner;
+	private Person person;
 	private int age; 
 	private String species;
 	private String race;
@@ -20,12 +20,12 @@ public class Pet {
 	private double weight;
 	
 	
-	public Pet(long petId, String name, Owner owner, int age, String species, String race, String characteristics,
+	public Pet(long petId, String name, Person person, int age, String species, String race, String characteristics,
 			double weight) {
 		super();
 		this.petId = petId;
 		this.name = name;
-		this.owner = owner;
+		this.person = person;
 		this.age = age;
 		this.species = species;
 		this.race = race;

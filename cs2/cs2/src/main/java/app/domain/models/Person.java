@@ -4,10 +4,6 @@ import lombok.Setter;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Setter
-@Getter
-@NoArgsConstructor
-
 public class Person {		
 	private long personId;
 	private long document;
@@ -15,13 +11,37 @@ public class Person {
 	private int age;
 	private String role;
 		
-	public Person(long personId, long document, String name, int age, String role) {
-		super();
-		this.personId = personId;
-		this.document = document;
-		this.name = name;
-		this.age = age;		
-		this.role = role;
-	}
+		public long getPersonId() {
+			return personId;
+		}
+		public void setPersonId(long personId) {
+			this.personId = personId;
+		}
+		public long getDocument() {
+			return document;
+		}
+		public void setDocument(long document) {
+			this.document = document;
+		}
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public int getAge() {
+			return age;
+		}
+		public void setAge(int age) {
+			this.age = age;
+		}
+		
+		public String getRole() {
+			return role;
+		}
+		public void setRole(String role) {
+			this.role = role;
+		}
+		
 }
 

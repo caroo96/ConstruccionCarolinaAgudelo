@@ -14,16 +14,16 @@ public class InvoiceHeader {
 	
 	private long invoiceHeaderId;
 	private Pet pet;
-	private Owner owner;	
+	private Person person;	
 	private Date dateCreated; 
 	private double amount;
 	private boolean status;
 	
-	public InvoiceHeader(long invoiceHeaderId, Pet pet, Owner owner, Date dateCreated, double amount, boolean status) {
+	public InvoiceHeader(long invoiceHeaderId, Pet pet, Person person, Date dateCreated, double amount, boolean status) {
 		super();
 		this.invoiceHeaderId = invoiceHeaderId;
 		this.pet = pet;
-		this.owner = owner;
+		this.person = person;
 		this.dateCreated = dateCreated;
 		this.amount = amount;
 		this.status = status;

@@ -12,13 +12,13 @@ public class MedicalRecordHeader {
 	
 	private long medicalRecordHeaderId;
 	private Pet pet;
-	private Owner owner;
+	private Person person;
 	
 	
-	public MedicalRecordHeader(long medicalRecordHeaderId, Pet pet, Owner owner) {
+	public MedicalRecordHeader(long medicalRecordHeaderId, Pet pet, Person person) {
 		super();
 		this.medicalRecordHeaderId = medicalRecordHeaderId;
 		this.pet = pet;
-		this.owner = owner;
+		this.person = person;
 	}
 }
