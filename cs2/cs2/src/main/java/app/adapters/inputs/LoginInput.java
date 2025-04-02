@@ -36,7 +36,7 @@ public class LoginInput implements InputPort {
 		this.veterinarianInput = veterinarianInput;
 		this.inputs = new HashMap<String, InputPort>();		
 		inputs.put("admin", adminInput);
-		inputs.put("veterinarianInput", veterinarianInput);
+		inputs.put("veterinario", veterinarianInput);
 
 	}
 	

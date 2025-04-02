@@ -25,9 +25,16 @@ public class PersonAdapter implements PersonPort {
 
 	@Override
 	public void savePerson(Person person) {
+		if (person.getRole() == null || (!person.getRole().equals("dueño") )) {
+			throw new IllegalArgumentException("Rol inválido. Debe ser dueño");
+		}
 		PersonEntity personEntity = personAdapter(person);
+		if (!personRepository.existsById(personEntity.getPersonId())) {
+			personRepository.save(personEntity);
+			}
+		
 		personRepository.save(personEntity);
-		person.setPersonId(personEntity.getPersonId());
+		System.out.println("Dueño guardado con éxito: " + person.getName());
 	}
 
 	@Override
@@ -42,7 +49,8 @@ public class PersonAdapter implements PersonPort {
 		person.setDocument(personEntity.getDocument());
 		person.setName(personEntity.getName());
 		person.setAge(personEntity.getAge());
-                return person;
+		person.setRole(personEntity.getRole());
+        return person;
 	}
 	
 
@@ -52,6 +60,7 @@ public class PersonAdapter implements PersonPort {
 		personEntity.setDocument(person.getDocument());
 		personEntity.setName(person.getName());
 		personEntity.setAge(person.getAge());
+		personEntity.setRole(person.getRole());
 		return personEntity;
 	}
 	
